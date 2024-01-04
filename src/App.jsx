@@ -19,7 +19,7 @@ console.log (randomDimension)
 },[])
 
   return (
-      <main className="'flex justify-center items-center bg-[url(/images/bg_page.png)] bg-cover'">
+      <main className="'flex flex-wrap justify-center items-center bg-[url(/images/bg_page.png)] bg-cover'">
         <Location locationInfo={locationInfo} setLocationInfo={setLocationInfo}/>
         <ResidentList residents={locationInfo?.residents ?? []} />
       </main>

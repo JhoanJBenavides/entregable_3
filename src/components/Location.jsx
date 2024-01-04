@@ -38,8 +38,8 @@ const Location = ({ locationInfo, setLocationInfo }) => {
   };
 
   return (
-    <section className="'relative grid grid-rows-1 p-20 bg-[url(/images/portal.png)] translate-x-80 -translate-y-20 bg-no-repeat bg-cover'">
-      <img className="-translate-x-20" src="/images/titulo.png" alt="" />
+    <section className="'relative flex-wrap p-20 bg-[url(/images/portal.png)] translate-x-80 -translate-y-20 bg-no-repeat bg-cover'">
+      <img className="flex-wrap -translate-x-20" src="/images/titulo.png" alt="" />
       <form
         className="max-w-max translate-x-28 translate-y-36 m-0 border border-green-500"
         onSubmit={handlesubmit}
@@ -81,7 +81,7 @@ const Location = ({ locationInfo, setLocationInfo }) => {
         <h2 className="translate-x-28 p-5 text-green-500">
           Welcome to {locationInfo?.name}!
         </h2>
-        <ul className="flex flex-center gap-8 text-white">
+        <ul className="flex flex-wrap gap-8 text-white">
           <li className="font-bold">Type: {locationInfo?.type}</li>
           <li className="font-bold">Dimension: {locationInfo?.dimension}</li>
           <li className="font-bold">Population: {locationInfo?.residents.length}</li>
